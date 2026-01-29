@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Vincula este formulario html con un doc css. que nos ayuda a personalizarlo-->
+    <title>MundoGAMING</title>
+</head>
+
+<script>
+function activarMusica() {
+    const musica = document.getElementById("bgm");
+    musica.play();
+}
+</script>
+
+<body>
+    <audio id="bgm" loop>
+    <source src="MEGALOVANIA.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="activarMusica()" class="btn-sans">
+    <img src="sans.png" alt="Sans" class="icono-sans">
+    Activar música
+</button>
+
+<script>
+let reproduciendo = false;
+
+function activarMusica() {
+    const musica = document.getElementById("bgm");
+
+    if (!reproduciendo) {
+        musica.play();
+        reproduciendo = true;
+    } else {
+        musica.pause();
+        reproduciendo = false;
+    }
+}
+</script>
+
+
+    <h1><span style="color:rgb(51, 255, 143)"> Mundo GAMING </span></h1>
+
+    Contesta con honestidad y fidelidad
+<hr>
+
+<p>
+Mis personaje favorito de la empresa nipona "nintendo" es Lilltle Mac, protagonista del videojuego "Punch Out"
+el cual tuvo su origen en las ARCADE de 1980, ya que en ese entonces habia un exceso de televisores y para disminuir en gastos
+se opto por crear un videojuego que ocupara mas de una pantalla, naciendo asi Little Mac.
+<br>
+Posteriormente tuvo un mayor protagonismo para la consola de 8 btis "NES" que es un acronimo de Nintendo Entreteiment Sistem, el cual
+contaria con la aparicion del campeon mundia Mike Tyson.
+</p>
+
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3ZuNmx2bG9uOThjdHc1Mzh5YXpuNmplYXV4NnoxbGxqYmJ5ZGNhMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/REgFJcnd2n21O/giphy.gif" width="250" height="250" />
+
+<hr>
+
+El youtuber que me mostro el mundo de los videojuegos fue mi sensei Pepe el Mago que con sus narraciones, carisma e ingenio, cada video 
+se volvia mas divertido que el anterior sin disminuir el valor real de una buena historia. 
+<a target="_blank" href="https://www.youtube.com/@PepeElMago">Pepe el Mago</a>
+
+<br>
+Ahora me importa conocer tu opinion :)
+<br>
+<hr>
+<form action="/formulario.php" method="post">
+
+    <div class="pregunta">
+        <label class="titulo" for="juego">Juego favorito</label>
+        <input type="text" id="juego" name="juego" placeholder="Diferente al mio">
+    </div>
+
+    <div class="pregunta">
+        <label class="titulo" for="carrera">Que carrera estas estudiando?</label>
+        <input type="text" id="carrera" name="carrera" placeholder="Yo estudio Ingeniería">
+    </div>
+
+    <div class="pregunta">
+        <span class="titulo">Tu horario esta muy feo :( ?</span>
+        <div class="opciones">
+            <label>
+                <input type="radio" name="horario" value="si"> Sí
+            </label>
+            <label>
+                <input type="radio" name="horario" value="no"> No
+            </label>
+        </div>
+    </div>
+
+    <div class="pregunta">
+        <label class="titulo" for="color">Cual es tu color favorito?</label>
+        <input type="color" id="color" name="color">
+    </div>
+
+    <div class="pregunta">
+        <span class="titulo">Te gustan los perros?</span>
+        <div class="opciones">
+            <label>
+                <input type="radio" name="perros" value="si"> Sí
+            </label>
+            <label>
+                <input type="radio" name="perros" value="no"> No
+            </label>
+        </div>
+    </div>
+
+    <div class="pregunta">
+        <span class="titulo">Stallone o Schwarzenegger (Espero que almenos conozcas a uno)</span>
+        <div class="opciones">
+            <label>
+                <input type="radio" name="accion" value="rocky"> Rocky Balboa
+            </label>
+            <label>
+                <input type="radio" name="accion" value="t800"> T-800
+            </label>
+        </div>
+    </div>
+
+    <div class="pregunta">
+        <span class="titulo">En la pelicula: Capitan America Civil War, de que team eras? (Solo hay una respuesta correcta jejejeje)</span>
+        <div class="opciones">
+            <label>
+                <input type="radio" name="civil" value="cap"> Capitan America
+            </label>
+            <label>
+                <input type="radio" name="civil" value="iron"> Iron Man
+            </label>
+        </div>
+    </div>
+
+    <input type="submit" value="Enviar respuestas">
+
+</form>
+
+<br>
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHlqNjk3ZjMxcWM3Mnl6aGNtcTR1aTdzZXMwajhmMWI0eGdjbHR4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ie1x9I3K6i6F84PnCu/giphy.gif" width="200" height="200" />
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg,#080f13,#10232c, #102a36, #1c4653, #265569, #11899e);
+    color: #f2f2f2;
+    padding: 20px;
+    line-height: 1.6;
+}
+/*boton de musica*/
+.btn-sans {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 2px 8px; /*Modifica el tamno del boton*/
+    font-size: 1.0rem; /*El tamano del texto lo cambia*/
+
+    background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro */
+    color: #00ffcc;
+
+    border: 1px solid #00ffcc;
+    border-radius: 4px;   /* RECTANGULAR */
+    border-radius: 15px;
+    cursor: pointer;
+}
+.icono-sans {
+    width: 27px;
+    height: auto;
+    
+    background: transparent !important;
+    border-radius: 0;
+}
+
+
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(111, 212, 111, 0.6);
+}
+
+/* Texto general */
+p {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, rgb(44, 235, 44), transparent);
+    margin: 30px 0;
+}
+
+/* Imágenes */
+img {
+    display: block; /* Posicion de las imagenes wow */
+    margin: 20px auto; /* Distancia entre los cuadros de texto*/
+    border-radius: 15px; /*Radio del vorde, incluso puede llegar a ser un circulo*/
+    box-shadow: 0 0 20px rgba(0,0,0,0.7); /*Le da profundidad a la imagen*/
+}
+
+/* Links */
+a {
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* Etiquetas */
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="color"],
+input:not([type="checkbox"]):not([type="submit"]) {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+/* ============================= */
+/* SECCION DE PREGUNTAS (RADIO) */
+/* ============================= */
+
+.pregunta {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.pregunta .titulo {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.opciones {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.opciones label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Botón */
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,255,200,0.7);
+}
